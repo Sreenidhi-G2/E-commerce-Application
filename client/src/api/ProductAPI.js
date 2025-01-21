@@ -6,7 +6,7 @@ const ProductAPI = () => {
 
  const getProducts=async()=>{
     try{
-    const res= await axios.get("/api/products")
+    const res= await axios.get("https://e-commerce-application-backend-55yo.onrender.com/api/products")
    SetProducts(res.data.products);
     }catch(err)
     {
