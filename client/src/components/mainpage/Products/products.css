@@ -1,0 +1,39 @@
+.products {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; /* Add spacing between cards */
+    justify-items: center;
+    margin: 20px auto;
+    padding: 0 10px; /* Add padding for better responsiveness */
+}
+
+/* Style for each product card */
+.product-card {
+    background-color: #fefefe;
+    border: 2px solid #e3e3e3;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    max-width: 300px; /* Ensure consistent card size */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Images inside product cards */
+.product-card img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    object-fit: cover; /* Crop images to fit the card neatly */
+}
+
+
+/* @import url("../utils/ProductList/ProductList.css"); */

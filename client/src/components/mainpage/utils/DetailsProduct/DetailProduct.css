@@ -1,0 +1,110 @@
+/* General Styling for the Detail Page */
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  /* Styling the image of the product */
+  .detail img {
+    width: 300px; /* Fixed width for the image */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  /* Flex layout for the details section */
+  .product-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  /* Styling for the product details on the right */
+  .product-details .details-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 500px;
+    align-items: flex-start;
+    text-align: left;
+  }
+  
+  /* Title and Product ID */
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  h6 {
+    font-size: 1rem;
+    color: #777;
+    margin: 0;
+  }
+  
+  /* Styling for the price */
+  span {
+    display: block;
+    font-size: 1.5rem;
+    color: #e91e63;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+  
+  /* Styling for the description and content */
+  span, p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    width: 100%;
+  }
+  
+
+  
+  
+  /* Responsive Styling */
+  @media screen and (max-width: 768px) {
+    .detail {
+      padding: 15px;
+    }
+  
+    /* Adjusting the layout for smaller screens */
+    .product-details {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+  
+    .detail img {
+      max-width: 100%;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    h6 {
+      font-size: 0.9rem;
+    }
+  
+    span, p {
+      font-size: 0.9rem;
+    }
+  
+    .cart {
+      padding: 10px 15px;
+      font-size: 1rem;
+    }
+  }
+  

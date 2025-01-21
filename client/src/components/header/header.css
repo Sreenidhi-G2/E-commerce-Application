@@ -1,0 +1,117 @@
+/* Global Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #ff6f61, #ff8966); /* Coral gradient */
+    color: white; /* White text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    /* position: sticky; */
+    top: 0; /* Sticky header on scroll */
+    z-index: 1000;
+}
+
+/* Menu Icon */
+header .menu {
+    font-size: 24px; /* Size for the menu icon */
+    cursor: pointer;
+}
+
+/* Logo Styling */
+header .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white; /* White text for the logo */
+}
+
+header .logo a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White link color */
+    transition: color 0.3s ease-in-out;
+}
+
+header .logo a:hover {
+    color: #ffe6e0; /* Softer white on hover */
+}
+
+/* Navigation Links */
+header ul {
+    display: flex;
+    align-items: center;
+    list-style: none; /* Remove bullets */
+    gap: 20px; /* Space between items */
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white; /* White links */
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+header ul li a:hover {
+    color: #ffe6e0; /* Softer white on hover */
+}
+
+/* Close Icon */
+header ul li {
+    display: flex;
+    align-items: center;
+    font-size: 24px; /* Adjust size for the close icon */
+    cursor: pointer;
+}
+
+/* Cart Icon */
+header .cart-icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+header .cart-icon span {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #fff; /* White badge for count */
+    color: #ff6f61; /* Coral text for count */
+    font-size: 12px;
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header .cart-icon a {
+    font-size: 24px; /* Adjust size of cart icon */
+    color: white; /* White cart icon */
+    margin-left: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+header .cart-icon a:hover {
+    color: #ffe6e0; /* Softer white on hover */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    header ul {
+        display: none; /* Hide menu for smaller screens */
+    }
+
+    header .menu {
+        display: block; /* Show menu icon */
+    }
+}

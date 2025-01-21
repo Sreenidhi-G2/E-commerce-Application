@@ -1,0 +1,110 @@
+/* Product Card Container */
+.product-card {
+    background-color: #fefefe;
+    border: 2px solid #e3e3e3;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 20px;
+    max-width: 300px;
+    margin: 10px auto;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Product Image */
+  .product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Product Info Box */
+  .product-box {
+    padding: 15px 0;
+  }
+  
+  .product-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .product-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2ecc71;
+    margin: 5px 0;
+  }
+  
+  .product-description {
+    font-size: 14px;
+    color: #777;
+    margin: 10px 0;
+  }
+  
+  /* Buttons Row */
+  .row-btn {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  /* Buttons */
+  .btn-buy,
+  .btn-view {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Buy Button */
+  .btn-buy {
+    background-color: #ff4757;
+    color: #fff;
+    border: 2px solid #ff4757;
+  }
+  
+  .btn-buy:hover {
+    background-color: #fff;
+    color: #ff4757;
+  }
+  
+  /* View Button */
+  .btn-view {
+    background-color: #1e90ff;
+    color: #fff;
+    border: 2px solid #1e90ff;
+  }
+  
+  .btn-view:hover {
+    background-color: #fff;
+    color: #1e90ff;
+  }
+  .row-btn a {
+    display: inline-block;
+    text-align: center;
+    background-color: #ff6f61; /* Button background color */
+    color: white; /* Button text color */
+    padding: 8px 12px; /* Padding inside buttons */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.row-btn a:hover {
+    background-color: #ff3f31; /* Button hover effect */
+}

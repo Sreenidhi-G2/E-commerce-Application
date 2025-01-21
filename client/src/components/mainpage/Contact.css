@@ -1,0 +1,48 @@
+.contact-us {
+    padding: 3rem;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color:linear-gradient(135deg, #ff6f61, #ff8966);
+    /* border: 2px solid #ccc; */
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 3rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-us h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+  }
+  
+  .apology-message {
+    font-size: 1.5rem;
+    color: #d9534f; /* Light red color for apology */
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
+  
+  .contact-info {
+    margin-top: 2rem;
+  }
+  
+  .contact-info p {
+    font-size: 1.8rem; /* Larger text for visibility */
+    color: #000;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-info a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.8rem; /* Larger text for email and phone */
+  }
+  
+  .contact-info a:hover {
+    color: #333;
+    text-decoration: underline;
+  }
+  
