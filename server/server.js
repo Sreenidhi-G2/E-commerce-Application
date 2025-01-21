@@ -11,10 +11,10 @@ app.use(fileUpload({
     tempFileDir: '/tmp/' 
 }))
 const PORT = process.env.PORT|| 5000;
-app.use("/user",require("./routes/routes"))
-app.use("/api",require("./routes/categoryRoutes"))
-app.use("/api",require("./routes/productsRoutes"))
-app.use("/api",require("./routes/upload"))
+app.use("user",require("./routes/routes"))
+app.use("api",require("./routes/categoryRoutes"))
+app.use("api",require("./routes/productsRoutes"))
+app.use("api",require("./routes/upload"))
 
 
 app.get("/",(req,res)=>{
